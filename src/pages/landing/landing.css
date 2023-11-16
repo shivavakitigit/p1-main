@@ -1,0 +1,240 @@
+/* --- JUMBO STYLES --- */
+
+.jumbo-container {
+  background-color: var(--black);
+  padding: var(--spacing) 0;
+  border: 10px solid transparent;
+  border-image: repeating-linear-gradient(90deg, var(--white), var(--white) 15px, var(--red) 0px, var(--red) 30px) 150;
+}
+
+.jumbo-wrap {
+  padding: var(--sm-spacing), 0;
+}
+
+.dashed-line {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--white),
+    var(--white) 50px,
+    var(--black) 20px,
+    var(--black) 70px
+  );
+}
+
+.jumbo-text {
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.jumbo-text h1 {
+  font-size: 50px;
+  letter-spacing: -2px;
+}
+
+.jumbo-text p {
+  font-size: 25px;
+}
+
+.f1-car {
+  position: absolute;
+  height: 100px;
+}
+
+.car-one {
+  margin-top: 130px;
+}
+
+.car-two {
+  margin-top: -80px;
+}
+
+/* --- LANDING STYLES--- */
+
+/* --- PLAY SECTION --- */
+
+.play-wrap {
+  border-bottom: var(--red) 8px solid;
+  margin-bottom: var(--sm-spacing);
+  margin-top: var(--sm-spacing);
+}
+
+.play-featured {
+  color: var(--red);
+  margin-top: 10px;
+}
+.play-title {
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+
+.play-text {
+  margin-top: var(--sm-spacing);
+  line-height: 1.7;
+}
+
+.landing-image {
+  width: 100%;
+  height: 100%;
+  margin-top: var(--sm-spacing);
+  margin-bottom: var(--sm-spacing);
+}
+
+/* ---ARTICLES --- */
+a {
+  text-decoration: none;
+}
+
+.articles-wrap {
+  margin-top: 10px;
+}
+
+.article-card {
+  margin-bottom: var(--sm-spacing);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-text {
+  background-color: var(--white);
+  position: relative;
+}
+
+.article-news {
+  color: var(--red);
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.article-title {
+  color: var(--black);
+  border-bottom: 2px solid rgb(194, 194, 194);
+  padding: 10px;
+  border-radius: 0px 0px 50px 0px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.article-card:hover .article-image {
+  scale: 1.05;
+}
+
+.article-card:hover .article-title {
+  border-bottom: 2px solid var(--red);
+}
+
+/* --- SCHEDULE --- */
+.schedule {
+  border-top: 8px var(--red) solid;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.schedule-title {
+  margin-top: var(--sm-spacing);
+  letter-spacing: -1px;
+}
+
+.schedule-title,
+.schedule-countdown {
+  text-align: center;
+}
+
+.schedule-countdown {
+  margin-bottom: var(--sm-spacing);
+  color: var(--red);
+}
+
+.schedule-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.race-card {
+  border-left: 4px solid var(--black);
+  background-color: #1c1c27;
+  color: var(--white);
+  border-radius: 2px;
+  padding: var(--sm-spacing);
+  margin: 10px;
+  white-space: nowrap;
+  letter-spacing: -1px;
+}
+
+.race-card:first-child {
+  border-left: 4px solid var(--red);
+}
+
+.flag-title-wrap {
+  display: flex;
+  justify-content: left;
+}
+
+.race-title {
+  padding-left: 10px;
+}
+
+/* --- FOOTER --- */
+footer {
+  color: var(--white);
+  background-color: var(--black);
+  padding: var(--spacing);
+  text-align: center;
+  font-size: 20px;
+}
+
+/* --- || MEDIA QUERIES FOR LARER SCREENS --- */
+
+@media (min-width: 750px) {
+  .landing-container {
+    padding: var(--spacing);
+  }
+
+  .play-wrap {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .play-wrap {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-right: 8px var(--red) solid;
+    border-top: 8px var(--red) solid;
+
+    padding-right: var(--sm-spacing);
+  }
+  .articles-wrap {
+    overflow-y: scroll;
+    height: 97vh;
+    padding-left: 15px;
+  }
+
+  .schedule {
+    border: none;
+  }
+}
